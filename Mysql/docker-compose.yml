@@ -1,0 +1,25 @@
+version: '3.6'
+
+services:
+  db:
+    image: mysql
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: mydb
+      MYSQL_USER: user
+      MYSQL_PASSWORD: user
+
+    volumes:
+      - /Users/tobytsembp/Documents/dev/Hashkey/Mysql/data:/var/lib/mysql 
+      # - ./init:/docker-entrypoint-initdb.d <--not work if work with persistence data
+
+    ports:
+      - 3306:3306
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080

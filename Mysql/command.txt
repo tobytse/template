@@ -1,0 +1,83 @@
+
+
+---------------
+docker compose
+---------------
+
+docker-compose up
+docker-compase down
+adminer
+	http://localhost:8080
+	control db via adminer
+
+login to mysql direclty
+	docker ps
+		get the name
+
+	docker exec -it mysql_db_1 mysql -uroot -p
+		login
+
+	basic sql command
+		show database;
+		use mydb;
+		show tables;
+
+---------------
+docker for below
+---------------
+
+
+---------------
+connection
+---------------
+
+username	root
+password	admin
+ip			0.0.0.0:3306
+
+
+---------------
+command for docker, not docker compose
+---------------
+
+create docker with new name
+docker run -it -v /data/:/var/lib/mysql —name mysql-server -p 3306:3306 -e MYSQL_ROOT_PASSWORD=admin -e MYSQL_DATABASE=demo centurylink/mysql
+
+docker run --name tobymysql -e MYSQL_ROOT_PASSWORD=pass -d mysql/ 
+
+
+stop container
+	docker stop mysql-server
+
+remove image
+	docker images
+	docker rmi -f id
+
+login mysql
+	docker ps
+		list out running container
+		get connection information
+
+	docker exec -it mysql-server mysql -uroot -p
+		login to mysql via docker
+
+basic command
+	show databases;
+
+logout
+	exit
+
+view log file in mysql
+	docker exec -it mysql-server bash
+	cat /var/log/mysql.log
+
+	mysql -uroot -p
+		login to mysql
+
+
+
+---------------
+Resource
+---------------
+https://www.youtube.com/watch?v=rTOfYLiz2Qk&t=279s
+https://www.youtube.com/watch?v=SccUGhbV6Pw

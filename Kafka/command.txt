@@ -1,0 +1,35 @@
+
+
+run zookeeper/kafka
+	docker-compose -f docker-compose.yml up
+
+login kafka
+	docker ps
+	docker exec -it f6e9bca3647f /bin/sh
+
+create topic
+	kafka-topics.sh --create --bootstrap-server 127.0.0.1:9092 --replication-factor 1 --partitions 1 --topic dcb
+	kafka-topics.sh --create --bootstrap-server 127.0.0.1:9092 --replication-factor 1 --partitions 1 --topic news
+
+list out topic
+	kafka-topics.sh --list --bootstrap-server 127.0.0.1:9092
+
+list out message
+	kafka-console-consumer.sh --bootstrap-server 127.0.0.1:9092 --topic myTopic
+
+list out all available message
+	kafka-console-consumer.sh --bootstrap-server 127.0.0.1:9092 --topic myTopic --from-beginning --max-messages 100
+
+	java
+        config.put(ConsumerConfig.AUTO_OFFSET_RESET_CONFIG, "earliest");
+        config.put(ConsumerConfig.GROUP_ID_CONFIG, "myGroupID1");
+
+Resource
+	Kafka
+	https://www.youtube.com/watch?v=2pBxoal7DY4
+
+	Springboot
+	https://www.udemy.com/course/apache-kafka-and-spring-boot-consumer-producer/learn/lecture/14836720#overview
+
+	Java read from begin
+	https://riptutorial.com/apache-kafka/example/19390/how-can-i-read-topic-from-its-beginning

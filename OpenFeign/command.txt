@@ -1,0 +1,7 @@
+
+
+Resource
+	https://www.youtube.com/watch?v=_MMf2SvNqxo
+
+	https://jsonplaceholder.typicode.com/users
+	http://jsonschema2pojo.org
