@@ -1,14 +1,75 @@
-https://github.com/tobytse/template.git
+
+repo
+	https://github.com/tobytse/template.git
 
 
 
+push local repo to remote
+	cd existing-project
+	git init
+	git add --all
+	git commit -m "Initial Commit"
+	git remote add origin https://github.com/tobytse/template.git
+	git push -u origin master
+
+get remote to local
+	git clone https://github.com/tobytse/template.git
 
 
-cd existing-project
-git init
-git add --all
-git commit -m "Initial Commit"
-git remote add origin https://github.com/tobytse/template.git
-git push -u origin master
+delete git repo(web)
+	select project > setting > remove/delete button
 
-git clone https://github.com/tobytse/template.git
+put updated code to git by command
+	git remote set-url origin https://github.com/tobytse/template.git
+	git status
+	if there is any new file
+		git add .
+	git commit -m "msg"
+	git push
+
+
+
+------------------------------------------------
+Git command example
+------------------------------------------------
+
+create branch(contact-changes)
+	get branch contact-changes
+
+switch to branch(contact-changes) from master branch
+	git checkout contact-changes
+
+commit change to branch(contact-changes)
+	git add --all
+	git commit -m "contact changes msg"
+
+merge branch(contact-changes) to master
+	git checkout master
+	git merge contact-changes
+
+delete contact-changes
+	git branch -D contract-changes
+
+create branch(home-changes)
+	git branch home-changes
+
+switch to branch(home-changes)
+	git checkout home-chagnes
+
+commit change to branch(home-changes)
+	git add -all
+	git commit -m "home changes"
+
+push branch(home-changes) to remote repository
+	git push origin home-changes
+	>>can see branch(home-changes) from bitbucket
+
+switch to master branch
+	git checkout master
+
+merge branch(home-changes) to master
+	git merge home-changes
+
+push local master to remote repository
+	git push origin master
+	>>can see code changed in source in bitbucket
