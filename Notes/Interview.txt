@@ -1,0 +1,41 @@
+office environment
+	open office
+	foreign tech firm, open office, share area
+	canteen/cheap
+	shuttle bus
+task match with responsibility
+	your expected task
+
+safe psychology, loyalty, relationship with colleagues
+	sometime will catch up some schedule
+	stab Si feast spirit. teamate id experience and willing to help
+	voluntary team, help the society
+
+salary, relatively
+	salary increment is reasonalble
+
+company vision/culture match with personal
+	provide better user experience to client
+	previous, some service limited to specific group of ppl
+	target, all people can enjoy premier banking service
+
+training and opportunities
+	workshop
+	colleague will arrange training to share banking knowledge
+
+promotion
+	opportunity to permenant
+	ability and take responiblity, promotion
+
+Question
+	conflict
+	motivate
+	any difficult project
+
+	java
+		lv1
+			constructor
+			inhernit
+
+		lv2
+			Overriding vs Overloading
