@@ -1,0 +1,5 @@
+Prerequisites
+	mysql project
+
+Resource
+	https://www.youtube.com/watch?v=IucFDX3RO9U

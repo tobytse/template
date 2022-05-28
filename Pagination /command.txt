@@ -1,0 +1,20 @@
+
+paging with H2
+	paging folder
+
+paging & sorting with mysql
+	https://www.youtube.com/watch?v=5fNK5lrj-X0
+	create folder pagingsorting
+	create class to insert record into db
+	work on the rest by following video
+		sorting
+		pagination
+		pagination and sorting
+
+
+Resource
+	for H2
+	https://www.youtube.com/watch?v=n2hyJbicr9U
+
+	for mysql
+	https://www.youtube.com/watch?v=5fNK5lrj-X0

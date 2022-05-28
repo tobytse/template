@@ -3,6 +3,9 @@
 run zookeeper/kafka
 	docker-compose -f docker-compose.yml up
 
+stop zookeeper/kafka
+	docker-compose down
+
 login kafka
 	docker ps
 	docker exec -it f6e9bca3647f /bin/sh

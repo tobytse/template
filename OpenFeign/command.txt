@@ -5,3 +5,4 @@ Resource
 
 	https://jsonplaceholder.typicode.com/users
 	http://jsonschema2pojo.org
+	http://jsoneditoronline.org
