@@ -1,0 +1,45 @@
+Maven1 - link 2 maven project
+	command palette > create maven project > quick start > test1
+		mvn install
+
+	command palette > create maven project > quick start > test2
+		pom.xml
+		<dependency>
+			<groupId>com.example</groupId>
+			<artifactId>test1</artifactId>
+			<version>1.0-SNAPSHOT</version>
+		</dependency>
+
+	install maven
+		https://www.youtube.com/watch?v=j0OnSAP-KtU
+		download
+		move to application folder
+		go to /user/toby
+		ls -a
+		add command to .bash_profile
+		if not work
+			Terminal -> Preferences -> Startup tab, 
+			and change "Shell Opens With:" from "Default login shell" 
+			to Command and value "/bin/bash"
+
+	link together
+	http://www.avajava.com/tutorials/lessons/how-do-i-add-a-project-as-a-dependency-of-another-project.html?page=2
+
+Maven2 - springboot project link to maven project
+	springboot
+		pom.xml
+		<dependency>
+			<groupId>com.example</groupId>
+			<artifactId>test1</artifactId>
+			<version>1.0-SNAPSHOT</version>
+		</dependency>
+	maven project
+		mvn install
+
+	springbok cannot be a denpendency
+
+Maven3 - modules
+	https://www.youtube.com/watch?v=yVzi3wuTUE4
+
+Resource
+	http://www.avajava.com/tutorials/lessons/how-do-i-add-a-project-as-a-dependency-of-another-project.html?page=1

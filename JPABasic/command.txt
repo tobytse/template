@@ -1,0 +1,24 @@
+-----------------
+jpa-basic-join
+-----------------
+	tool
+		https://jsoneditoronline.org
+		Customer.json
+	need database up
+	will auto create table by jpa
+	create OneToMany relation
+	insert record to multi table
+	select data from multi table
+
+-----------------
+Resource
+-----------------
+	#jpa-basic-join
+	mysql, insert and select multi table 27:00
+		https://www.youtube.com/watch?v=8qhaDBCJh6I
+
+	mysql, more different join relation 23:00
+		https://www.youtube.com/watch?v=N7nLUQMmjxs
+
+	mysql, full jpa in step by step 2:00:00
+	https://www.youtube.com/watch?v=XszpXoII9Sg

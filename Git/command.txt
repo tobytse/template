@@ -19,13 +19,16 @@ get remote to local
 delete git repo(web)
 	select project > setting > remove/delete button
 
-put updated code to git by command
-	git remote set-url origin https://github.com/tobytse/template.git
+**put updated code to git by command
+	optional > git remote set-url origin https://github.com/tobytse/template.git
 	git status
 	if there is any new file
 		git add .
 	git commit -m "msg"
 	git push
+
+
+
 
 
 

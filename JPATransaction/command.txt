@@ -1,0 +1,33 @@
+-----------------
+jpa-tran-mgt
+-----------------
+rely on
+	/Users/tobytsembp/Documents/dev/Hashkey/Mysql
+
+mysql link
+http://localhost:8080/?server=db&username=user&db=mydb
+
+set id column length
+@Column(length = 100)
+
+-----------------
+Resource
+-----------------
+	#jpa-tran-mgt
+	Mysql, JPA, Transaction Management 31:00
+		Passenger, Payment, no linked
+		check credit limit
+		use @transactional to rollback
+		https://www.youtube.com/watch?v=95kxPSbHzVg
+
+
+	H2, JPA, Transactional 20:00
+		employee, department, self create link
+	https://www.youtube.com/watch?v=raWaxW_clqo
+
+
+-----------------
+Tools
+-----------------
+https://www.mycompiler.io/new/sql
+https://jsoneditoronline.org

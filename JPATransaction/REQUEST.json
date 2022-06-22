@@ -1,0 +1,16 @@
+{
+  "passengerInfo": {
+    "name": "toby",
+    "email": "a@bb.cc",
+    "source": "online",
+    "destination": "BBSR",
+    "travelDate": "14-12-2002",
+    "pickupTime": "4.0 PM",
+    "arrivalTime": "6.0 PM",
+    "fare": 18000.0
+  },
+  "paymentInfo": {
+    "accountNo": "acc1",
+    "cardType": "DEBIT"
+  }
+}

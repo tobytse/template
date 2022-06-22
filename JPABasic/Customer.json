@@ -1,0 +1,21 @@
+{
+  "customer": {
+    "name": "toby",
+    "email": "a@bb.cc",
+    "gender": "male",
+    "products": [
+      {
+        "pid": 201,
+        "productName": "mobile",
+        "price": 2000,
+        "qty": 1
+      },
+      {
+        "pid": 201,
+        "productName": "labtop",
+        "price": 40000,
+        "qty": 3
+      }
+    ]
+  }
+}
