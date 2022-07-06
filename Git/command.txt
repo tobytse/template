@@ -1,9 +1,6 @@
-
-repo
-	https://github.com/tobytse/template.git
-
-
-
+------------------------------------------------
+Git command example
+------------------------------------------------
 push local repo to remote
 	cd existing-project
 	git init
@@ -14,7 +11,8 @@ push local repo to remote
 
 get remote to local
 	git clone https://github.com/tobytse/template.git
-
+	git clone https://gitlab.hashkeydevtest.com/toby.tse/helloworld.git
+	enter username and password from pop-up
 
 delete git repo(web)
 	select project > setting > remove/delete button
@@ -27,14 +25,6 @@ delete git repo(web)
 	git commit -m "msg"
 	git push
 
-
-
-
-
-
-------------------------------------------------
-Git command example
-------------------------------------------------
 
 create branch(contact-changes)
 	get branch contact-changes
@@ -76,3 +66,55 @@ merge branch(home-changes) to master
 push local master to remote repository
 	git push origin master
 	>>can see code changed in source in bitbucket
+
+
+-----------------------
+configuration
+-----------------------
+
+#basic setup
+    git config --global user.name "Toby Tse"
+    git config --global user.email toby.tse@hashkey.com
+
+#CRLF issue
+
+	method1
+		window
+			git config --global core.autocrlf true
+		linux	
+			git config --global core.autocrlf input
+
+	method2
+		add .gitattributes file
+			* text=auto
+			*.jpg binary
+			*.png binary
+
+		git checkout-index --force --all
+
+-----------------------
+SSH
+-----------------------
+	open gitbash
+	ssh-keygen -t rsa -b 4096 -C "toby.tse@hashkey.com"
+		c:\users\tobytse\.ssh\
+	eval $(ssh-agent -s)
+	ssh-add ~/.ssh/id_rsa
+	ssh-add -D
+	ssh-add ~/.ssh/id_rsa
+
+-----------------------
+Install gitlab(testing email by openssl)
+-----------------------
+(use the git one)
+openssl s_client -starttls smtp -crlf -connect smtp.office365.com:25
+HELO
+AUTH LOGIN
+username(base64) by https://www.base64decode.org/
+password(base64) by https://www.base64decode.org/
+
+MAIL FROM:<toby.tse@hashkey.com>
+rcpt to:<adrian.lee@hashkey.com>
+DATA
+hello
+.
