@@ -1,0 +1,39 @@
+-----------------
+cqrs & edd + Axon
+-----------------
+
+basic axon
+cqrs sample
+https://www.youtube.com/watch?v=XolV-pKjVyA
+
+
+post, put, delete, patch
+	command api
+		command
+		command handler
+		events handler
+
+get
+	query api
+		query
+		query handler
+		events handler
+
+
+
+axon
+	docker run -d \
+ 	 --name axonserver \
+  	-p 8024:8024 \
+  	-p 8124:8124 \
+  	axoniq/axonserver
+
+
+-----------------
+Resource
+-----------------
+
+-----------------
+Tools
+-----------------
+

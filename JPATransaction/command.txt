@@ -1,6 +1,9 @@
 -----------------
 jpa-tran-mgt
 -----------------
+same database
+multi transaction
+
 rely on
 	/Users/tobytsembp/Documents/dev/Hashkey/Mysql
 
