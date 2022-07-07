@@ -1,0 +1,2 @@
+auto import
+	shift+alt+o

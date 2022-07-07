@@ -1,9 +1,64 @@
 spring-cloud-config-server
 	https://www.youtube.com/watch?v=gb1i4WyWNK4
+
 	spring cloud config server only
+	no profile
 	connect to local git repo
 
-Resource
-	
+	prerequites
+	#create local repo
+		create configrepo folder
+		add application.yml
+			my:
+			    greeting: hello world from config server
+			    list:
+			        values: one, two, three
 
-Tool
+			db:
+			    connection: connection-string-here
+			    host: 127.0.0.1
+			    port: 1200
+
+		git init
+		git add .
+		git commit -m "initial"
+
+	#URI
+		http://localhost:8888/<file-name>/<profile>
+		http://localhost:8888/application/default
+			work with error
+			as default looking at main branch
+		http://localhost:8888/application/default/master/		
+			work without error
+			but we only have master branch
+	
+		windows(tested)
+			uri=file:///c:/Users/TobyTse/Desktop/Hashkey/Project/Development/configrepo
+		linux
+			/Users/tobytse/code/configrepo
+			uri=${HOME}/code/configrepo
+
+insurance
+	https://www.youtube.com/watch?v=x1BR0D-buQg
+	client, server, github remote, use resttemplate
+	insurance-client > insurance config server > github > insurance-provider
+	
+	#insurance-provider
+		http://localhost:8080/insurance-service/getAllPlans
+
+	#insurance-config-server
+		http://localhost:8888/acturator/default	
+		https://github.com/tobytse/config-server/
+
+	#insurance-client
+		http://localhost:9090/getPlan
+
+		need to add below manually
+        	<dependency>
+            		<groupId>org.springframework.cloud</groupId>
+            		<artifactId>spring-cloud-starter-bootstrap</artifactId>
+        	</dependency>		
+		use resttemplate
+			can't use resttemplate bean
+
+	run configserver > provider > client
