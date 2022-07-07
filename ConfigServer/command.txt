@@ -1,0 +1,9 @@
+spring-cloud-config-server
+	https://www.youtube.com/watch?v=gb1i4WyWNK4
+	spring cloud config server only
+	connect to local git repo
+
+Resource
+	
+
+Tool

@@ -11,8 +11,8 @@ services:
       MYSQL_USER: user
       MYSQL_PASSWORD: user
 
-    volumes:
-      - /Users/tobytsembp/Documents/dev/Hashkey/Mysql/data:/var/lib/mysql 
+    #volumes:
+      #- /Users/tobytsembp/Documents/dev/Hashkey/Mysql/data:/var/lib/mysql 
       # - ./init:/docker-entrypoint-initdb.d <--not work if work with persistence data
 
     ports:

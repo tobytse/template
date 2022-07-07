@@ -3,3 +3,6 @@ Prerequisites
 
 Resource
 	https://www.youtube.com/watch?v=IucFDX3RO9U
+
+Tool
+	https://jsoneditoronline.org/

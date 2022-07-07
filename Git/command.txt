@@ -92,6 +92,11 @@ configuration
 
 		git checkout-index --force --all
 
+
+#access tokens
+	github > setting > developer settings > personal access tokens
+	git push > paste token
+
 -----------------------
 SSH
 -----------------------
